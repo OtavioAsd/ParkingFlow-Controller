@@ -1,0 +1,13 @@
+@import './variables.scss';
+
+.wrapper {
+    height: 2rem;
+    border: none; 
+    background-color: $secondary-bg-color;
+    color: $text-color; 
+    caret-color: $text-color;
+    outline: none;
+    padding: 0.2rem; // 3.2px
+    border-radius: 0.32rem; // 5px
+    margin: 0.5rem; // 8px 
+}

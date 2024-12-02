@@ -1,0 +1,670 @@
+@import './variables.scss';
+
+.wrapper {
+    min-height: 100vh;
+    background-color: $bg-color;
+}
+
+
+.form {
+    margin: 2rem 10rem 2rem 10rem; 
+}
+
+.wrapper table {
+  margin: 0 0 0 10rem;
+}
+
+.deleteBtn {
+    color: #ff0000;
+    background-color: $secondary-bg-color;
+    width: 7rem; 
+    margin: 0 0 0 0.625rem ; 
+}
+
+.inputSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hourlyRateInput {
+    width: 4rem; 
+    border: none; 
+    background-color: $secondary-bg-color;
+    color: $text-color;
+    caret-color: $text-color;
+    outline: none;
+    padding: 0.5rem 0.3125rem; 
+    border-radius: 0.3125rem; 
+    margin: 0.5rem; 
+}
+
+.footerWrapper {
+ display: flex;
+ justify-content: center;
+}
+
+.footer  {
+  position: absolute;
+  bottom: 0;
+  margin: 0.5rem;
+}
+
+@media (min-width: 2001px) and (max-width: 2560px) {
+
+  .form {
+    margin: 3rem 2rem; 
+    font-size: 2rem; 
+  }
+
+  .deleteBtn {
+    width: 15rem; 
+    height: 4rem; 
+    font-size: 2rem; 
+    margin: 0 0 0 2rem; 
+    border: 0.3rem solid $border-color;
+  } 
+
+  .label {
+    font-size: 2.5rem;
+    text-wrap: nowrap;
+  } 
+
+  .inputSection {
+    margin-bottom: 5rem;
+  }
+
+  .input {
+    width: 30rem;
+    height: 3.5rem; 
+    font-size: 2rem; 
+    padding: 0.8rem;
+  }
+
+  .addBtn {
+    font-size: 2rem; 
+    width: 18rem;
+    height: 4rem;
+    border: 0.3rem solid $border-color;
+  }
+
+  .hourlyRateInput {
+    width: 8rem; 
+    height: 3.5rem; 
+    font-size: 2rem; 
+    padding: 1rem 0.8rem;
+    border-radius: 0.8rem; 
+    margin: 2rem; 
+  }
+
+  .wrapper table {
+    margin: 0 0 120rem 20rem; 
+    font-size: 2rem; 
+  }
+
+  .footer {
+    font-size: 2.5rem; 
+    position: sticky;
+    bottom: 0;
+    margin: 2rem; 
+  }
+}
+
+
+@media (min-width: 1441px) and (max-width: 2000px) {
+
+  .form {
+    margin: 2rem 10rem 2rem 10rem; 
+  }
+
+  .wrapper table {
+  margin: 0 0 85rem 20rem;
+  }
+
+  .deleteBtn {
+    width: 7rem; 
+    margin: 0 0 0 0.625rem ; 
+  }
+
+  .inputSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hourlyRateInput {
+    width: 4rem; 
+    padding: 0.5rem 0.3125rem; 
+    border-radius: 0.3125rem; 
+    margin: 0.5rem; 
+  }
+
+
+  .footer  {
+    font-size: 1.5rem;
+  position: sticky;
+  bottom: 0;
+  margin: 0.5rem;
+  }
+
+}
+
+@media (max-width: 1240px) {
+
+  .form {
+    margin: 2rem 10rem 2rem 10rem; 
+  }
+
+  .wrapper table {
+  margin: 0 0 40rem 10rem;
+  }
+
+  .inputSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hourlyRateInput {
+    width: 4rem; 
+    padding: 0.5rem 0.3125rem; 
+    border-radius: 0.3125rem; 
+    margin: 0.5rem; 
+  }
+
+  .footer  {
+    font-size: 1.5rem;
+    position: sticky;
+    bottom: 0;
+    margin: 0.5rem;
+  }
+
+}
+
+@media (max-width: 1024px) {
+
+  .label {
+    text-wrap: nowrap;
+  }
+
+  .form {
+    margin: 3rem;
+  }
+
+  .addBtn {
+    width: 5.6rem;
+  }
+}
+
+@media (max-width: 990px) {
+
+  .form {
+    margin: 0; 
+  }
+
+  .label {
+    text-wrap: nowrap;
+    font-size: 0.9rem;
+   
+  }
+
+  .inputSection {
+    margin: 4rem 0.5rem 2.5rem 0.5rem;
+  }
+
+  .input {
+    font-size: 0.8rem;
+    width: 14rem;
+    height: 1.5rem;
+    margin: 0.3rem;
+    padding: 0.5rem;
+  }
+
+  .hourlyRateInput {
+    width: 2.5rem; 
+    margin: 0.3rem;
+    font-size: 0.8rem;
+  }
+
+  .addBtn {
+    font-size: 0.7rem;
+    width: 5.5rem;
+    height: 2.2rem;
+    margin: 0.1rem;
+  }
+
+  .wrapper table {
+    margin: 0 auto 23rem auto;
+  }
+
+  .footerWrapper {
+    text-align: center;
+  }
+
+  .footer {
+    font-size: 0.9rem; 
+    position: sticky;
+  }
+
+}
+
+@media (max-width: 1102px) {
+
+  .form {
+    margin: 0; 
+  }
+
+  .label {
+    text-wrap: nowrap;
+    font-size: 0.9rem;
+   
+  }
+
+  .inputSection {
+    margin: 4rem 0.5rem 2.5rem 0.5rem;
+  }
+
+  .input {
+    font-size: 0.8rem;
+    width: 12rem;
+    height: 1.5rem;
+    margin: 0.3rem;
+    padding: 0.5rem;
+  }
+
+  .hourlyRateInput {
+    width: 2.5rem; 
+    margin: 0.3rem;
+    font-size: 0.8rem;
+  }
+
+  .addBtn {
+    font-size: 0.7rem;
+    width: 5.5rem;
+    height: 2.2rem;
+    margin: 0.1rem;
+  }
+
+  .wrapper table {
+    margin: 0 auto 23rem auto;
+  }
+
+  .footerWrapper {
+    text-align: center;
+  }
+
+  .footer {
+    font-size: 0.9rem; 
+    position: sticky;
+  }
+
+}
+
+@media (max-width: 788px) {
+
+  .form {
+    margin: 0; 
+  }
+
+  .label {
+    text-wrap: nowrap;
+    font-size: 0.9rem;
+   
+  }
+
+  .inputSection {
+    margin: 4rem 0.5rem 2.5rem 0.5rem;
+  }
+
+  .input {
+    font-size: 0.8rem;
+    width: 12rem;
+    height: 1.5rem;
+    margin: 0.3rem;
+    padding: 0.5rem;
+  }
+
+  .hourlyRateInput {
+    width: 2.5rem; 
+    margin: 0.3rem;
+    font-size: 0.8rem;
+  }
+
+  .addBtn {
+    font-size: 0.7rem;
+    width: 5.5rem;
+    height: 2.2rem;
+    margin: 0.1rem;
+  }
+
+  .wrapper table {
+    margin: 0 auto 23rem auto;
+  }
+
+  .footerWrapper {
+    text-align: center;
+  }
+
+  .footer {
+    font-size: 0.9rem; 
+    position: sticky;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .form {
+    margin: 0; 
+  }
+
+  .label {
+    text-wrap: nowrap;
+    font-size: 0.9rem;
+   
+  }
+
+  .inputSection {
+    margin: 4rem 0.5rem 2.5rem 0.5rem;
+  }
+
+  .input {
+    font-size: 0.8rem;
+    width: 14rem;
+    height: 1.5rem;
+    margin: 0.3rem;
+    padding: 0.5rem;
+  }
+
+  .hourlyRateInput {
+    width: 2.5rem; 
+    margin: 0.3rem;
+    font-size: 0.8rem;
+  }
+
+  .addBtn {
+    font-size: 0.7rem;
+    width: 5.5rem;
+    height: 2.2rem;
+    margin: 0.1rem;
+  }
+
+  .wrapper table {
+    margin: 0 auto 23rem auto;
+  }
+
+  .footerWrapper {
+    text-align: center;
+  }
+
+  .footer {
+    font-size: 0.9rem; 
+    position: sticky;
+  }
+
+}
+
+@media (max-width: 745px) {
+ 
+  .form {
+    margin: 0; 
+  }
+
+  .label {
+    font-size: 0.8rem;
+    width: 10rem;
+    margin: 0.3rem;
+  }
+
+  .inputSection {
+    flex-direction: column; 
+    align-items: start;
+    margin: 4rem 0.5rem 0.5rem 0.5rem;
+  }
+
+  .input {
+    font-size: 0.7rem;
+    width: 14rem;
+    height: 1.5rem;
+    margin: 0.3rem;
+    padding: 0.5rem;
+  }
+
+  .hourlyRateInput {
+    width: 2.5rem; 
+    margin: 0.3rem;
+    font-size: 0.7rem;
+  }
+
+  .addBtn {
+    font-size: 0.6rem;
+    width: 3.8rem;
+    height: 1.5rem;
+  }
+
+  .wrapper table {
+    margin: 0 auto 16rem auto;
+  }
+
+  .footerWrapper {
+    text-align: center;
+  }
+
+  .footer {
+    font-size: 0.7rem; 
+    position: sticky;
+  }
+
+}
+
+@media (max-width: 425px) {
+
+  .form {
+    margin: 0; 
+  }
+
+  .label {
+    font-size: 0.8rem;
+    width: 10rem;
+    margin: 0.3rem;
+  }
+
+  .inputSection {
+    flex-direction: column; 
+    align-items: start;
+    margin: 4rem 0.5rem 0.5rem 0.5rem;
+  }
+
+  .input {
+    font-size: 0.7rem;
+    width: 14rem;
+    height: 1.5rem;
+    margin: 0.3rem;
+    padding: 0.5rem;
+  }
+
+  .hourlyRateInput {
+    width: 2.5rem; 
+    margin: 0.3rem;
+    font-size: 0.7rem;
+  }
+
+  .addBtn {
+    font-size: 0.6rem;
+    width: 3.8rem;
+    height: 1.5rem;
+  }
+
+  .wrapper table {
+    margin: 0 auto 16rem auto;
+  }
+
+  .footerWrapper {
+    text-align: center;
+  }
+
+  .footer {
+    font-size: 0.7rem; 
+    position: sticky;
+  }
+
+}
+
+@media (max-width: 375px) {
+
+  .form {
+    margin: 0; 
+  }
+
+  .label {
+    font-size: 0.8rem;
+    width: 10rem;
+    margin: 0.3rem;
+  }
+
+  .inputSection {
+    flex-direction: column; 
+    align-items: start;
+    margin: 4rem 0.5rem 0.5rem 0.5rem;
+  }
+
+  .input {
+    font-size: 0.7rem;
+    width: 10rem;
+    height: 1.5rem;
+    margin: 0.3rem;
+    padding: 0.5rem;
+  }
+
+  .hourlyRateInput {
+    width: 2.5rem; 
+    margin: 0.3rem;
+    font-size: 0.7rem;
+  }
+
+  .addBtn {
+    font-size: 0.6rem;
+    width: 3.8rem;
+    height: 1.5rem;
+  }
+
+  .wrapper table {
+    margin: 0 auto 16rem auto;
+    width: 8rem;
+  }
+
+  .footerWrapper {
+    text-align: center;
+  }
+
+  .footer {
+    font-size: 0.7rem; 
+    position: sticky;
+  }
+
+}
+
+@media (max-width: 320px) {
+
+  .form {
+    margin: 0; 
+  }
+
+  .label {
+    font-size: 0.8rem;
+    width: 10rem;
+    margin: 0.3rem;
+  }
+
+  .inputSection {
+    flex-direction: column; 
+    align-items: start;
+    margin: 4rem 0.5rem 0.5rem 0.5rem;
+  }
+
+  .input {
+    font-size: 0.6rem;
+    width: 10rem;
+    height: 1.5rem;
+    margin: 0.3rem;
+    padding: 0.5rem;
+  }
+
+  .hourlyRateInput {
+    width: 2.5rem; 
+    margin: 0.3rem;
+    font-size: 0.6rem;
+  }
+
+  .addBtn {
+    font-size: 0.6rem;
+    width: 3.8rem;
+    height: 1.5rem;
+  }
+
+  .wrapper table {
+    margin: 0 auto 14rem auto;
+  
+  }
+
+  .footerWrapper {
+    text-align: center;
+  }
+
+  .footer {
+    font-size: 0.7rem; 
+    position: sticky;
+  }
+
+}
+
+@media (max-width: 280px) {
+
+  .form {
+    margin: 0; 
+  }
+
+  .label {
+    font-size: 0.8rem;
+    width: 10rem;
+    margin: 0.3rem;
+  }
+
+  .inputSection {
+    flex-direction: column; 
+    align-items: start;
+    margin: 4rem 0.5rem 0.5rem 0.5rem;
+  }
+
+  .input {
+    font-size: 0.6rem;
+    width: 10rem;
+    height: 1.5rem;
+    margin: 0.3rem;
+    padding: 0.5rem;
+  }
+
+  .hourlyRateInput {
+    width: 2.5rem;
+    height: 1.5rem; 
+    margin: 0.3rem;
+    font-size: 0.5rem; 
+  }
+
+  .addBtn {
+    font-size: 0.6rem;
+    width: 3.8rem;
+    height: 1.5rem;
+  }
+
+
+  .footerWrapper {
+    text-align: center;
+  }
+
+  .footer {
+    font-size: 0.7rem; 
+    position: sticky;
+  }
+
+}
